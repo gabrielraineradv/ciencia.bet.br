@@ -1,0 +1,179 @@
+:root {
+  color-scheme: light;
+  --brand: #0b3d91;
+  --accent: #06b6d4;
+  --bg: #f5f7fb;
+  --text: #0f172a;
+  --muted: #475569;
+  --card: #ffffff;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+header {
+  background: var(--brand);
+  color: #fff;
+  padding: 32px 24px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+header p {
+  margin: 0;
+  max-width: 720px;
+}
+
+nav {
+  background: #082f68;
+  padding: 12px 24px;
+}
+
+nav a {
+  color: #fff;
+  margin-right: 16px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+section {
+  margin-bottom: 32px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin: 12px 0 4px;
+}
+
+input[type="text"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  margin-top: 12px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.badge {
+  display: inline-block;
+  background: #e2f6fb;
+  color: #0e7490;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+footer {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 32px 24px;
+}
+
+footer a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+ul.inline-list {
+  padding-left: 16px;
+  margin: 8px 0 0;
+}
+
+.inline-list li {
+  margin-bottom: 6px;
+}
+
+.alert {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #9a3412;
+  font-weight: 600;
+}
+
+.sitemap-grid {
+  columns: 3 220px;
+  column-gap: 24px;
+}
+
+.sitemap-grid a {
+  display: block;
+  color: var(--brand);
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 720px) {
+  header {
+    padding: 24px 16px;
+  }
+
+  nav {
+    padding: 12px 16px;
+  }
+
+  main {
+    padding: 24px 16px 48px;
+  }
+
+  .sitemap-grid {
+    columns: 1;
+  }
+}
